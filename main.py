@@ -22,7 +22,7 @@ def main():
     canvas = tk.Canvas(width=800, height=526)
     canvas.create_image(400, 263, image=front_card_img)
     canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
-    canvas.grid(row=1, column=1)
+    canvas.grid(row=0, column=0, columnspan=2)
 
     # Words
     lb_language = canvas.create_text(
@@ -46,7 +46,11 @@ def main():
     )
 
     # Buttons
+    btn_right = tk.Button(image=right_img, highlightthickness=0)
+    btn_right.grid(row=1, column=1)
 
+    btn_wrong = tk.Button(image=wrong_img, highlightthickness=0)
+    btn_wrong.grid(row=1, column=0)
 
     # --- MAINLOOP ---
     window.mainloop()
