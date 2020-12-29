@@ -8,7 +8,6 @@ WINDOW_PAD_Y = 20
 # LANGUAGE LABEL
 LB_LANG_X = 400
 LB_LANG_Y = 150
-LB_LANG_TEXT = "French"
 LB_LANG_FONT = "Arial"
 LB_LANG_FONT_SIZE = 40
 LB_LANG_FONT_STYLE = "italic"
@@ -16,7 +15,10 @@ LB_LANG_FONT_STYLE = "italic"
 # WORD LABEL
 LB_WORD_X = 400
 LB_WORD_Y = 263
-LB_WORD_TEXT = "trouve"
 LB_WORD_FONT = "Arial"
 LB_WORD_FONT_SIZE = 60
 LB_WORD_FONT_STYLE = "bold"
+
+# FILES PATH
+DATA = "./data/french_words.csv"
+DATA_UNLEARNED = "./data/words_to_learn.csv"
